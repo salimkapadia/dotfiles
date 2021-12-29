@@ -1,5 +1,6 @@
 # Compiled Python files
 *.pyc
+dist/
 
 # Folder view configuration files
 .DS_Store
@@ -12,3 +13,15 @@ Thumbs.db
 # Files that might appear on external disks
 .Spotlight-V100
 .Trashes
+
+
+# Temporary Files #
+###################
+*.swp
+*.swo
+.tmp/
+
+# Editor files #
+###################
+# Ignore PHP Storms editor files.
+.idea/
