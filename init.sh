@@ -4,11 +4,6 @@
 mkdir -p ~/Documents/Projects/hidden-files/aws
 mkdir -p ~/Documents/Projects/hidden-files/ssh
 
-# setup symlink association.
-ln -s ~/Documents/Projects/hidden-files/aws ~/.aws
-ln -s ~/Documents/Projects/hidden-files/ssh ~/.ssh
-ln -s ~/Documents/Projects/hidden-files/gitconfig ~/.gitconfig
-
 # Setup dotfiles
 /bin/bash bootstrap.sh
 
@@ -55,4 +50,12 @@ brew cleanup
 
 # Install aws cli version 2.
 brew install awscli
+python3 -m pip install --upgrade pip
 python3 -m pip install boto3 --user
+
+# setup symlink association.
+ln -s ~/Documents/Projects/hidden-files/aws ~/.aws
+ln -s ~/Documents/Projects/hidden-files/ssh ~/.ssh
+
+rm ~/.gitconfig
+ln -s ~/Documents/Projects/hidden-files/gitconfig ~/.gitconfig
