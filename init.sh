@@ -22,6 +22,7 @@ brew install --cask whatsapp
 brew install --cask beyond-compare
 brew install --cask zoom
 brew install --cask microsoft-teams
+brew install --cask postman
 
 brew install warrensbox/tap/tfswitch
 
@@ -30,6 +31,25 @@ brew install kubectl
 brew install terraform-docs
 brew install python3
 brew install blueutil
+brew install jq
+
+## Temporary
+brew install pass
+brew install --cask gpg-suite
+curl -LsS https://raw.githubusercontent.com/gruntwork-io/gruntwork-installer/master/bootstrap-gruntwork-installer.sh | bash /dev/stdin --version v0.0.38
+export GITHUB_OAUTH_TOKEN=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
+gruntwork-install --module-name 'aws-auth' --repo 'https://github.com/gruntwork-io/terraform-aws-security' --tag 'v0.63.1'
+brew install --cask 1password/tap/1password-cli
+brew install --cask aws-vault
+gruntwork-install \
+  --repo https://github.com/gruntwork-io/bash-commons \
+  --module-name bash-commons \
+  --tag v0.1.9
+gruntwork-install --binary-name "kubergrunt" --repo "https://github.com/gruntwork-io/kubergrunt" --tag "v0.8.0"
+brew install k9s
+gpg --list-keys
+## Temporary
+
 
 brew install alfred
 # brew install android-file-transfer

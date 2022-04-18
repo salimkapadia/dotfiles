@@ -44,7 +44,6 @@ brew install wget --with-iri
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
-
 # Install more recent versions of some macOS tools.
 brew install vim --with-override-system-vi
 brew install grep
@@ -106,3 +105,8 @@ brew install tree
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+
+brew install pass
+brew install --cask gpg-suite
+brew install k9s
