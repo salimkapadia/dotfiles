@@ -37,7 +37,7 @@ brew install jq
 brew install pass
 brew install --cask gpg-suite
 curl -LsS https://raw.githubusercontent.com/gruntwork-io/gruntwork-installer/master/bootstrap-gruntwork-installer.sh | bash /dev/stdin --version v0.0.38
-export GITHUB_OAUTH_TOKEN=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
+
 gruntwork-install --module-name 'aws-auth' --repo 'https://github.com/gruntwork-io/terraform-aws-security' --tag 'v0.63.1'
 brew install --cask 1password/tap/1password-cli
 brew install --cask aws-vault
